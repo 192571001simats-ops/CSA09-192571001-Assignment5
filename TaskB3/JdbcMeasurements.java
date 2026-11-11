@@ -60,10 +60,18 @@ public class JdbcMeasurements {
   }
 
   static void measured(String name, int n, Runnable action) {
-    Bench.measurePrepared(name, n, () -> {
-      try { clear(); return n; }
-      catch (SQLException e) { throw new RuntimeException(e); }
-    }, ignored -> action.run());
+    Bench.measurePrepared(
+        name,
+        n,
+        () -> {
+          try {
+            clear();
+            return n;
+          } catch (SQLException e) {
+            throw new RuntimeException(e);
+          }
+        },
+        ignored -> action.run());
   }
 
   public static void main(String[] args) throws Exception {
@@ -156,6 +164,7 @@ public class JdbcMeasurements {
       Bench.require(remain == (auto ? 5000 : 0), "partial commit versus complete rollback");
     }
     System.out.println(
-        "Table reset and input generation are outside timing; insertion includes connection and commit; row counts are verified after measurement");
+        "Table reset and input generation are outside timing; insertion includes connection and"
+            + " commit; row counts are verified after measurement");
   }
 }

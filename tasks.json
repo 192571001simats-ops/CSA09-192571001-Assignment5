@@ -1,0 +1,32 @@
+{
+  "TaskA1": [
+    "RecordLayouts"
+  ],
+  "TaskA2": [
+    "BufferedDesign"
+  ],
+  "TaskA3": [
+    "StudentDaoDemo"
+  ],
+  "TaskA4": [
+    "SerializationStudy"
+  ],
+  "TaskA5": [
+    "TransactionSafety"
+  ],
+  "TaskB1": [
+    "PassStore",
+    "FileMeasurements",
+    "BusPassValidation"
+  ],
+  "TaskB2": [
+    "AdversarialFiles"
+  ],
+  "TaskB3": [
+    "JdbcMeasurements",
+    "SmallDataValidation"
+  ],
+  "TaskB4": [
+    "Migration"
+  ]
+}

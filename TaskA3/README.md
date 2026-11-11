@@ -11,9 +11,9 @@ From the repository root on Linux or macOS:
 
 ```bash
 mkdir -p build/TaskA3
-javac -encoding UTF-8 -d build/TaskA3 $(find shared TaskA3 -name "*.java")
+javac -encoding UTF-8 -cp lib/mysql-connector-j-9.2.0.jar -d build/TaskA3 $(find shared TaskA3 -name "*.java")
 cd TaskA3
-java -cp ../build/TaskA3 StudentDaoDemo
+java -cp ../build/TaskA3:../lib/mysql-connector-j-9.2.0.jar StudentDaoDemo
 cd ..
 ```
 
@@ -22,3 +22,5 @@ Windows PowerShell uses `Get-ChildItem shared,TaskA3 -Recurse -Filter *.java` to
 ## Execution evidence
 
 The captured output is in output.txt. Raw repeated measurements, where required, are in results.csv; summary.csv reports the mean, median, range and standard deviation. Heap deltas reflect heap occupancy and are not allocated-byte counts.
+
+The root README and schema.sql define the isolated MySQL setup. The Windows run_all.ps1 uses the Windows classpath separator.

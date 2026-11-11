@@ -20,3 +20,15 @@ Measured files use decimal MB; file generation is outside timed sections; OS pag
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
 
 Exit code: 0
+$ java BusPassValidation
+PASS missing file is an empty lookup store
+PASS normal add find and quoted field preservation
+PASS nonexistent pass ID returns empty
+PASS route match and route without records
+PASS duplicate pass ID rejected
+PASS abandoned temporary write leaves canonical record intact
+PASS damaged line reported without losing valid row
+PASS update refuses to overwrite damaged canonical store
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+
+Exit code: 0
