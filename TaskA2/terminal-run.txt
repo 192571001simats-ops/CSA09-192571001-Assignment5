@@ -1,0 +1,9 @@
+$ java com.sun.tools.javac.Main -encoding UTF-8 -g -d build @sources.txt
+$ compile_status=0
+Compiler exit code: 0
+$ java -Xms128m -Xmx512m BufferedDesign
+PASS unterminated final line counted
+PASS empty file has zero lines
+For 50,000,000 bytes: one-byte read calls=50,000,001 including EOF; 8192-byte reads approx=6105
+$ run_status=0
+Program exit code: 0

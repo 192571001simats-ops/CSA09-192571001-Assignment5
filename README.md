@@ -38,4 +38,4 @@ Two warmups and five measured trials are retained where timing is requested. Tab
 
 ## Implementation screenshots
 
-Each task includes implementation-screenshot.png with a source excerpt and recorded Java execution output. The corresponding full console is in implementation-run.txt and compiler output is in implementation-compile.txt. The reports follow the purple, rose and light blue assignment format. Assignment 4 also contains screenshots of the running applications.
+Each task includes real-execution.png, captured directly from its running terminal window on the cloud desktop. The full compiler and program output is in terminal-run.txt. The reports follow the purple, rose and light blue assignment format. Assignment 4 also contains screenshots of the running applications.

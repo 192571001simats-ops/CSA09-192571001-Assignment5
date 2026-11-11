@@ -1,0 +1,39 @@
+$ java com.sun.tools.javac.Main -encoding UTF-8 -g -d build @sources.txt
+$ compile_status=0
+Compiler exit code: 0
+$ java -Xms128m -Xmx512m SmallDataValidation
+ROW mode=0 P0 R0 Student0 12 4500.00
+ROW mode=0 P1 R1 Student1 12 4500.00
+ROW mode=0 P2 R2 Student2 12 4500.00
+ROW mode=0 P3 R3 Student3 12 4500.00
+ROW mode=0 P4 R4 Student4 12 4500.00
+ROW mode=0 P5 R5 Student5 12 4500.00
+ROW mode=0 P6 R6 Student6 12 4500.00
+ROW mode=0 P7 R7 Student7 12 4500.00
+ROW mode=0 P8 R8 Student8 12 4500.00
+ROW mode=0 P9 R9 Student9 12 4500.00
+PASS all five fields of ten rows verified mode 0
+ROW mode=1 P0 R0 Student0 12 4500.00
+ROW mode=1 P1 R1 Student1 12 4500.00
+ROW mode=1 P2 R2 Student2 12 4500.00
+ROW mode=1 P3 R3 Student3 12 4500.00
+ROW mode=1 P4 R4 Student4 12 4500.00
+ROW mode=1 P5 R5 Student5 12 4500.00
+ROW mode=1 P6 R6 Student6 12 4500.00
+ROW mode=1 P7 R7 Student7 12 4500.00
+ROW mode=1 P8 R8 Student8 12 4500.00
+ROW mode=1 P9 R9 Student9 12 4500.00
+PASS all five fields of ten rows verified mode 1
+ROW mode=2 P0 R0 Student0 12 4500.00
+ROW mode=2 P1 R1 Student1 12 4500.00
+ROW mode=2 P2 R2 Student2 12 4500.00
+ROW mode=2 P3 R3 Student3 12 4500.00
+ROW mode=2 P4 R4 Student4 12 4500.00
+ROW mode=2 P5 R5 Student5 12 4500.00
+ROW mode=2 P6 R6 Student6 12 4500.00
+ROW mode=2 P7 R7 Student7 12 4500.00
+ROW mode=2 P8 R8 Student8 12 4500.00
+ROW mode=2 P9 R9 Student9 12 4500.00
+PASS all five fields of ten rows verified mode 2
+$ run_status=0
+Program exit code: 0

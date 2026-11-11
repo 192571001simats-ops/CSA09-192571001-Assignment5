@@ -1,0 +1,10 @@
+$ java com.sun.tools.javac.Main -encoding UTF-8 -g -d build @sources.txt
+$ compile_status=0
+Compiler exit code: 0
+$ java -Xms128m -Xmx512m StudentDaoDemo
+PASS DAO insert and primary key lookup
+PASS DAO update
+PASS DAO ordered list and delete
+PASS DAO absent primary key
+$ run_status=0
+Program exit code: 0
