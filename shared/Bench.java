@@ -23,4 +23,12 @@ public final class Bench {
         }
         System.out.println("MEASURED " + caseName + " size="+size+" trials=5");
     }
+
+ public static <T> void measurePrepared(String caseName,int size,java.util.function.Supplier<T> setup,java.util.function.Consumer<T> operation){
+  for(int trial=-1;trial<=5;trial++){
+   T data=setup.get();long before=Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory();long start=System.nanoTime();operation.accept(data);long elapsed=System.nanoTime()-start;long after=Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory();
+   if(trial>0)try{Path p=Path.of("results.csv");if(!Files.exists(p))Files.writeString(p,"case,size,trial,nanoseconds,heap_delta_bytes\n");Files.writeString(p,caseName+","+size+","+trial+","+elapsed+","+(after-before)+"\n",StandardOpenOption.APPEND);}catch(IOException e){throw new UncheckedIOException(e);}
+  }
+  System.out.println("MEASURED "+caseName+" size="+size+" trials=5 setup outside timing");
+ }
 }

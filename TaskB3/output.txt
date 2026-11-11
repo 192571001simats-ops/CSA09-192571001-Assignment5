@@ -1,0 +1,34 @@
+$ java JdbcMeasurements
+PASS ten records correct method 0
+PASS ten records correct method 1
+PASS ten records correct method 2
+COLUMN pass_id VARCHAR
+COLUMN reg_no VARCHAR
+COLUMN name VARCHAR
+COLUMN route_no INT
+COLUMN amount DECIMAL
+MEASURED Statement_transaction size=1000 trials=5
+MEASURED Prepared_transaction size=1000 trials=5
+MEASURED Batch_transaction size=1000 trials=5
+MEASURED Batch_autocommit size=1000 trials=5
+PASS provided PassLoader rows 1000
+MEASURED Statement_transaction size=10000 trials=5
+MEASURED Prepared_transaction size=10000 trials=5
+MEASURED Batch_transaction size=10000 trials=5
+MEASURED Batch_autocommit size=10000 trials=5
+PASS provided PassLoader rows 10000
+MEASURED Statement_transaction size=100000 trials=5
+MEASURED Prepared_transaction size=100000 trials=5
+MEASURED Batch_transaction size=100000 trials=5
+MEASURED Batch_autocommit size=100000 trials=5
+PASS provided PassLoader rows 100000
+PASS invalid amount rolls back all batches and restores auto commit
+Failure halfway autoCommit=true rows remaining=5000
+PASS partial commit versus complete rollback
+Failure halfway autoCommit=false rows remaining=0
+PASS partial commit versus complete rollback
+Benchmark includes identical table reset, connection and validation overhead for every mode; generated records exist before timing
+
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+
+Exit code: 0
