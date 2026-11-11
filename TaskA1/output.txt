@@ -1,0 +1,11 @@
+$ java RecordLayouts
+PASS quoted comma round trip
+PASS route listing
+PASS binary format version
+PASS binary fields round trip
+"P1001","192571001","Athisaya, U",12,"Anna Nagar",2027-01-31,4500.00
+Binary bytes=68
+
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+
+Exit code: 0
