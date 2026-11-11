@@ -1,1 +1,0 @@
-import java.io.Serializable; public class ResidentVersion implements Serializable {private static final long serialVersionUID=2L; public String name="Arun"; public String phone;}
