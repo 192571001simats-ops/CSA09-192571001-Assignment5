@@ -7,27 +7,30 @@ COLUMN reg_no VARCHAR
 COLUMN name VARCHAR
 COLUMN route_no INT
 COLUMN amount DECIMAL
-MEASURED Statement_transaction size=1000 trials=5
-MEASURED Prepared_transaction size=1000 trials=5
-MEASURED Batch_transaction size=1000 trials=5
-MEASURED Batch_autocommit size=1000 trials=5
+MEASURED Statement_transaction size=1000 trials=5 setup outside timing
+MEASURED Prepared_transaction size=1000 trials=5 setup outside timing
+MEASURED Batch_transaction size=1000 trials=5 setup outside timing
+MEASURED Batch_autocommit size=1000 trials=5 setup outside timing
+PASS measured insertion row count 1000
 PASS provided PassLoader rows 1000
-MEASURED Statement_transaction size=10000 trials=5
-MEASURED Prepared_transaction size=10000 trials=5
-MEASURED Batch_transaction size=10000 trials=5
-MEASURED Batch_autocommit size=10000 trials=5
+MEASURED Statement_transaction size=10000 trials=5 setup outside timing
+MEASURED Prepared_transaction size=10000 trials=5 setup outside timing
+MEASURED Batch_transaction size=10000 trials=5 setup outside timing
+MEASURED Batch_autocommit size=10000 trials=5 setup outside timing
+PASS measured insertion row count 10000
 PASS provided PassLoader rows 10000
-MEASURED Statement_transaction size=100000 trials=5
-MEASURED Prepared_transaction size=100000 trials=5
-MEASURED Batch_transaction size=100000 trials=5
-MEASURED Batch_autocommit size=100000 trials=5
+MEASURED Statement_transaction size=100000 trials=5 setup outside timing
+MEASURED Prepared_transaction size=100000 trials=5 setup outside timing
+MEASURED Batch_transaction size=100000 trials=5 setup outside timing
+MEASURED Batch_autocommit size=100000 trials=5 setup outside timing
+PASS measured insertion row count 100000
 PASS provided PassLoader rows 100000
 PASS invalid amount rolls back all batches and restores auto commit
 Failure halfway autoCommit=true rows remaining=5000
 PASS partial commit versus complete rollback
 Failure halfway autoCommit=false rows remaining=0
 PASS partial commit versus complete rollback
-Benchmark includes identical table reset, connection and validation overhead for every mode; generated records exist before timing
+Table reset and input generation are outside timing; insertion includes connection and commit; row counts are verified after measurement
 
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
 
