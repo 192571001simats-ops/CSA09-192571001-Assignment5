@@ -1,0 +1,7 @@
+$ java StudentDaoDemo
+PASS DAO insert and primary key lookup
+PASS DAO update
+PASS DAO ordered list and delete
+PASS DAO absent primary key
+
+Exit code: 0

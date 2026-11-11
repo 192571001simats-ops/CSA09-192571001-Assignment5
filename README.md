@@ -35,3 +35,7 @@ Two warmups and five measured trials are retained where timing is requested. Tab
 
 [Completed report PDF](report/Athisaya_U_Java_Assignment5_Completed.pdf)  
 [Editable Word report](report/Athisaya_U_Java_Assignment5_Completed.docx)
+
+## Implementation screenshots
+
+Each task includes implementation-screenshot.png with a source excerpt and recorded Java execution output. The corresponding full console is in implementation-run.txt and compiler output is in implementation-compile.txt. The reports follow the purple, rose and light blue assignment format. Assignment 4 also contains screenshots of the running applications.

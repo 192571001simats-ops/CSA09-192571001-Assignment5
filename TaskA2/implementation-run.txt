@@ -1,0 +1,6 @@
+$ java BufferedDesign
+PASS unterminated final line counted
+PASS empty file has zero lines
+For 50,000,000 bytes: one-byte read calls=50,000,001 including EOF; 8192-byte reads approx=6105
+
+Exit code: 0
