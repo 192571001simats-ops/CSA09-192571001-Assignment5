@@ -1,0 +1,10 @@
+$ java com.sun.tools.javac.Main -encoding UTF-8 -g -d build @sources.txt
+$ compile_status=0
+Compiler exit code: 0
+$ java -Xms128m -Xmx512m SerializationStudy
+PASS transient secrets and live connections omitted
+PASS old file new phone defaults to null with compatible UID
+PASS UID mismatch rejected: ResidentVersion; local class incompatible: stream classdesc serialVersionUID = 1, local class serialVersionUID = 2
+Hostel graph serialized bytes=323
+$ run_status=0
+Program exit code: 0

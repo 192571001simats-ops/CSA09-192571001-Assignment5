@@ -1,0 +1,9 @@
+$ java SerializationStudy
+PASS transient secrets and live connections omitted
+PASS old file new phone defaults to null with compatible UID
+PASS UID mismatch rejected: ResidentVersion; local class incompatible: stream classdesc serialVersionUID = 1, local class serialVersionUID = 2
+Hostel graph serialized bytes=323
+
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+
+Exit code: 0

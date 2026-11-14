@@ -1,0 +1,8 @@
+$ java com.sun.tools.javac.Main -encoding UTF-8 -g -d build @sources.txt
+$ compile_status=0
+Compiler exit code: 0
+$ java -Xms128m -Xmx512m PassStore
+[P1003, 192311003, Divya, 7, 3800.0]
+null
+$ run_status=0
+Program exit code: 0

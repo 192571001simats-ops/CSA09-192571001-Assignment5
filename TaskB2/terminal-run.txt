@@ -1,0 +1,12 @@
+$ java com.sun.tools.javac.Main -encoding UTF-8 -g -d build @sources.txt
+$ compile_status=0
+Compiler exit code: 0
+$ java -Xms128m -Xmx512m AdversarialFiles
+PASS local unsafe query accepted adversarial input
+PASS parameter binding rejected same adversarial input
+PASS three damaged lines reported; later valid record survives
+REJECT 1,Expected seven fields
+REJECT 2,Expected seven fields
+REJECT 3,Character N is neither a decimal digit number, decimal point, nor "e" notation exponential mark.
+$ run_status=0
+Program exit code: 0

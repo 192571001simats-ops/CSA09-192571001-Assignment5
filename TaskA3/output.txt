@@ -1,0 +1,9 @@
+$ java StudentDaoDemo
+PASS DAO insert and primary key lookup
+PASS DAO update
+PASS DAO ordered list and delete
+PASS DAO absent primary key
+
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+
+Exit code: 0

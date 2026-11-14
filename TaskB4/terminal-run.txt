@@ -1,0 +1,16 @@
+$ java com.sun.tools.javac.Main -encoding UTF-8 -g -d build @sources.txt
+$ compile_status=0
+Compiler exit code: 0
+$ java -Xms128m -Xmx512m Migration
+PASS 100 valid migrated; one damaged row quarantined
+Database: MySQL 8.4.13
+Driver: MySQL Connector/J mysql-connector-j-9.2.0 (Revision: a3909bfeb62d5a517ab444bb88ba7ecf26100297)
+TABLE bus_pass
+TABLE fees_assignment4
+TABLE registrations_assignment4
+TABLE students_lab5
+TABLE users_lab5
+TABLE wallets_lab5
+PASS migration preserves every record field
+$ run_status=0
+Program exit code: 0

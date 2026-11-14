@@ -1,0 +1,11 @@
+{
+  "java": "OpenJDK 21.0.13",
+  "initial_heap_mib": 128,
+  "maximum_heap_mib": 512,
+  "warmup_trials": 2,
+  "measured_trials": 5,
+  "mysql": "8.4.13",
+  "jdbc_driver": "MySQL Connector/J 9.2.0",
+  "name": "Athisaya U",
+  "register_number": "192571001"
+}

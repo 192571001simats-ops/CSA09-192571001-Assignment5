@@ -1,0 +1,11 @@
+$ java TransactionSafety
+Injected failure between updates
+PASS rollback preserves both wallets
+After transfer: 1:500.00 2:500.00
+PASS successful transfer preserves Rs1000 total
+PASS unsafe local test login bypass reproduced
+PASS prepared query treats attack as literal data
+
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+
+Exit code: 0

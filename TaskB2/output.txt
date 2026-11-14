@@ -1,0 +1,11 @@
+$ java AdversarialFiles
+PASS local unsafe query accepted adversarial input
+PASS parameter binding rejected same adversarial input
+PASS three damaged lines reported; later valid record survives
+REJECT 1,Expected seven fields
+REJECT 2,Expected seven fields
+REJECT 3,Character N is neither a decimal digit number, decimal point, nor "e" notation exponential mark.
+
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+
+Exit code: 0
